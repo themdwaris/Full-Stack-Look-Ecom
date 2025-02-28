@@ -1,6 +1,6 @@
 Ecommerce website named Look
 
-Description
+Description,
 A fully responsive modern Full Stack Ecommerce Website named Look in this project i am build multiple features.
 
 Features

@@ -1,4 +1,9 @@
+Ecommerce website named Look
+
+Description
 A fully responsive modern Full Stack Ecommerce Website named Look in this project i am build multiple features.
+
+Features
 • Integrated User Authentication such as Signup, SignIn, Logout using jsonwebtoken with express and mongodb.
 • Integrated Admin panel with Admin authentication, 
   where admin can add products and delete products and also change the status of the product such as Order placed, Shipped, Packing, out for delivery, delivered, and all these features connected to dababase.

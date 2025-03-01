@@ -280,7 +280,7 @@ const Collection = () => {
           ) : (
             <div className="mt-6 md:mt-10 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
               {filterProducts?.length > 0 &&
-                filterProducts?.map((product) => (
+                filterProducts?.slice(startIndex,lastIndex)?.map((product) => (
                   <ProductCard
                     key={product._id}
                     id={product._id}

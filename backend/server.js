@@ -16,12 +16,12 @@ connectCloudinary()
 
 //middlewares
 app.use(express.json())
-const corsOptions = {
-    origin: 'https://lookbymd.vercel.app', // Allow only this origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
-};
-app.use(cors(corsOptions))
+// const corsOptions = {
+//     origin: 'https://lookbymd.vercel.app', // Allow only this origin
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow specific HTTP methods
+//     allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+// };
+app.use(cors())
 
 //api endpoints
 app.use("/api/user",userRouter)

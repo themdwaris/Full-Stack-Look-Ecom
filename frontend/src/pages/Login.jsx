@@ -37,9 +37,9 @@ const Login = () => {
         });
         if (res?.data?.success) {
           setToken(res?.data?.token);
-          setUser(res.data.user)
+          // setUser(res.data.user)
           localStorage.setItem("token", token);
-          localStorage.setItem("user",JSON.stringify(res.data.user))
+          // localStorage.setItem("user",JSON.stringify(res.data.user))
           navigate("/");
           toast.success("Login successful");
         } else {

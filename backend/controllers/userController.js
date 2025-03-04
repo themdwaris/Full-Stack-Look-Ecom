@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import userModel from "../models/userModel.js";
 
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET);
+  return jwt.sign({ id }, process.env.JWT_SECRET,{ expiresIn: "1d" });
 };
 // Route for user register
 const userRegister = async (req, res) => {
